@@ -1,112 +1,65 @@
-# CV
+# Togzhan Kurmanbek
+### Junior Frontend Developer
 
-| Start task | Deadline task        | 
-|------------|----------------------|
-| 21.12.2021 | 03.01.2022 23:59 UTC |
+--- 
 
-## Описание проекта
-CV (сurriculum vitae) - документ, в котором соискатель описывает своё образование и опыт работы. В отличие от резюме, которое редактируется под требования каждой конкретной вакансии, в CV отображаются профессиональные достижения и навыки за весь период учёбы и работы.  
+## Contact information
+**Email:** togzhan.kurmanbek@gmail.com
+**Telegram:** @ParisianT
+**[Шпаргалка по синтаксису Markdown](https://www.linkedin.com/in/togzhan-k/)**
 
-## Задание
-Вам необходимо создать своё CV с использованием markdown разметки, а затем сверстать его используя html и css.
+---
+## Brief information about myself
+My goal is to develop myself as a Frontend developer and grow in this field. Moreover, I'm working as a teacher from a course _Introduction to Web development_. 
 
-## Ключевые навыки:
-- работа с Git и GitHub
-- использование markdown разметки
-- базовые навыки вёрстки
-- использование [rs app](https://app.rs.school/) для сабмита и проверки тасков
+## Skills
+- HTML5, CSS3
+- basic JS
+- Php, Java, Sql
+- Git, GitHub
+- VSCode, Sublime Text
+- BEM methodology
+- Figma
 
-## Этапы работы над проектом:
-Задание состоит из трёх частей:
-#### CV#1. Markdown & Git - [Требования и критерии оценки](git-markdown.md)
-- в этой части задания вы создаёте личный публичный репозиторий `rsschool-cv`, добавляете в него CV в формате markdown, деплоите его на GitHub Pages
-- проверяется история коммитов и pull request
-- примерное время выполнения - 2 часа
-- форма проверки - автотест
-#### CV#2. HTML, CSS & Git Basics - [Требования и критерии оценки](html-css-git.md)
-- в этой части задания вы продолжаете работу в ранее созданном репозитории, создаёте ещё одну ветку `rsschool-cv-html`, добавляете в неё файлы `index.html` и `style.css` с произвольным содержимым, деплоите их на GitHub Pages
-- проверяется история коммитов и pull request
-- примерное время выполнения - 1 час
-- форма проверки - автотест
-#### CV#3. CV. Cross-Check - [Требования и критерии оценки](cv-stage0.md)
-- в этой части задания вы верстаете и стилизуете своё CV
-- проверяется валидность и семантичность вёрстки, содержание CV
-- примерное время выполнения - 15 часов
-- форма проверки - кросс-чек
+## Code example
+### Hide/Show the answer to a question when the question is clicked using JQUERY
+```JQuery
+	$(document).ready(function(){
+	$(".question").click(function(){
 
-На выполнение задания отводится 2 недели
+		$(this).css('font-weight', '400');
 
-## Содержание CV:
-Рекомендации EPAM HR department 
-1. Имя и фамилия
-2. Контакты для связи
-3. Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
-4. Навыки (языки программирования, фреймворки, методологии, системы контроля версий и инструменты разработки, которыми вы владеете)
-5. Примеры кода
-6. Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и ссылками на исходный код. 
-7. Образование (включая пройденные курсы и тренинги)
-8. Английский язык (уровень английского языка, если была языковая практика, расскажите о ней)
+		$('.arrow').toggleClass('reverse');	
 
-## Рекомендации к составлению CV:
-- оформление CV на ваше усмотрение. Старайтесь выполнить работу максимально качественно. При выборе дизайна CV можно руководствоваться примерами, приведёнными в материалах к заданию
-- CV составляется на английском языке.
-- при составлении CV рекомендуется указывать реальные данные
-- в CV добавьте своё фото или аватарку. Фото предпочтительнее
-- в CV укажите актуальные контакты для связи, в т.ч никнейм на дискорд-сервере rs school
-- в качестве примера кода приведите решение задачи с сайта [Codewars](https://www.codewars.com/).  
-Если решённых задач пока нет, подойдёт [задача](https://www.codewars.com/kata/50654ddff44f800200000004/train/javascript), которую нужно решить при регистрации на Codewars
-- код добавляется при помощи символов и тегов, а не картинкой
-- для выполненных проектов добавьте название проекта, ссылку на код проекта на гитхабе или ссылку на страницу проекта.  
-Если выполненных проектов пока нет, в качестве первого проекта укажите само CV
+		$(".answer").slideUp();
 
-## Технические требования
-- работа проверяется в браузере Google Chrome последней версии
-- нет ограничений на использование js-библиотек, препроцессоров, фреймворков, можно использовать любые известные технологии 
+		if($(this).next().is(":visible")){	
+			$(this).next().slideUp("fast");  
+			$(this).toggleClass('non-active');
+		}
 
-## Требования к репозиторию
-- Задание выполняется в вашем личном публичном репозитории
-- Название репозитория `rsschool-cv`
+		else{	
+			$(this).next().slideDown("fast");
+			$(this).toggleClass('active');
+			      
+		}
+	});
+});
+```
 
-## Требования к коммитам
-- История коммитов должна отображать процесс разработки приложения.
-- [Названия коммитов дайте согласно гайдлайну](https://docs.rs.school/#/git-convention)
-
-## Требования к Pull Request
-- Название Pull Request дайте по названию задания
-- [Описание Pull Request дайте по схеме](https://docs.rs.school/#/pull-request-review-process?id=Требования-к-pull-request-pr)  
-- Мержить Pull Request из ветки разработки в ветку `main` не нужно
-
-## Чтобы получить баллы за задание необходимо: 
-- Выполнить задание \*
-- Засабмитить задание т.е. отправить его на проверку \**  
-- Если задание проверяется в ходе кросс-чека, проверить все присланные на проверку работы и засабмитить результаты проверки до дедлайна кросс-чека \***  
-
-\* *Весь код проекта вам необходимо написать самостоятельно, только так можно чему-то научиться.  
-Копирование чужого кода (`Ctrl + C`, `Ctrl + V`) на курсе запрещено.*  
-\** *Засабмитить задание можно только до дедлайна таска, после дедлайна сабмит недоступен*  
-\*** *Сабмит результатов кросс-чек проверки доступен и после дедлайна кросс-чека, но на оценки проверяющего  и проверяемых не влияет*  
+## Work Experience
+- [Github account] (https://github.com/Togzhan2021)
+- HTML/CSS projects: http://togzhan-portfolio.surge.sh/ 
 
 
-## Как сабмитить автопроверяемые задания
-- Задания `Markdown & Git` и `HTML, CSS & Git Basics` проверяются автотестами  
-- После окончания работы над заданием зайдите в rs app https://app.rs.school/, выберите **Auto-Test**, в выпадающем списке выберите название задания, нажмите кнопку **Submit**. Справа отобразится результат проверки.  
-- До наступления дедлайна сабмитить задание можно сколько угодно раз, каждый следующий сабмит перезаписывает предыдущий.
+## Courses
+- [Responsive Web Design Certification from Freecodecamp.org](https://www.freecodecamp.org/certification/togzhan/responsive-web-design)
+- Front End Development Course from Ayat Innovation 
+- JavaScript Algorithms and Data Structures from Freecodecamp.org (in progress)
+- [Web Design for Everybody: Basics of Web Development & Coding in Coursera](https://www.coursera.org/programs/computer-engineering-and-information-security-mcsse-speciality-masters-jjlcd?currentTab=CATALOG&productId=bf56AUzfEeWRyA5YS9oHkQ&productType=s12n&showMiniModal=true) (in progress)
+- RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 
-## Как сабмитить задание CV. Cross-Check
-- Задание `CV. Cross-Check` проверяется в ходе кросс-чека.  
-- После выдачи задания, но до наступления дедлайна зайдите в rs app https://app.rs.school/, выберите **Cross-Check: Submit**, в выпадающем списке выберите название задания, в поле **Solution URL** добавьте ссылку на задеплоенную версию своего CV, нажмите кнопку **Submit**.  
-- Засабмитить задание рекомендуется как можно раньше, как только в rs app появится такая возможность
-- После сабмита задание можно продолжать выполнять до самого дедлайна.
-
-## Проверка задания CV. Cross-Check
-- инструкция по проведению cross-check: https://docs.rs.school/#/cross-check-flow
-- форма для кросс-чека https://cv-cross-check.netlify.app/
-- ссылки на самые лучшие работы вашего набора с очень высоким качеством выполнения добавьте, пожалуйста, в эту форму https://forms.gle/kcmAkFK4j1EGW5JS8
-
-## Материалы:
-- [Работа с Git](git.md)
-- [Шпаргалка по синтаксису Markdown](https://ydmitry.ru/blog/rukovodstvo-po-markdown-dlya-uproshcheniya-veb-razrabotki/)
-- [HTML5 Семантические элементы](https://html5css.ru/html/html5_semantic_elements.php)
-- [Примеры оформления CV](https://www.freepik.com/free-photos-vectors/cv-template)
-- [Примеры оформления CV](https://www.canva.com/resumes/templates/)
-- [Figma Community. CV](https://www.figma.com/community/search?model_type=hub_files&q=cv)
+## Languages
+- Kazakh - native
+- Russian - fluent
+- English - intermediate
