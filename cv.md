@@ -6,8 +6,7 @@
 ## Contact information
 **Email:** togzhan.kurmanbek@gmail.com
 **Telegram:** @ParisianT
-
-**[Шпаргалка по синтаксису Markdown](https://www.linkedin.com/in/togzhan-k/)**
+**[Linkedin](https://www.linkedin.com/in/togzhan-k/)**
 
 ---
 ## Brief information about myself
