@@ -52,8 +52,8 @@ Also, I strive to grow in IT, achieve good results in my field, share my knowled
 ```
 
 ## Work Experience
-- [Github account] (https://github.com/Togzhan2021)
-- HTML/CSS projects: http://togzhan-portfolio.surge.sh/ 
+- [Github account](https://github.com/Togzhan2021)
+- [HTML/CSS projects](http://togzhan-portfolio.surge.sh/)
 
 
 ## Courses
