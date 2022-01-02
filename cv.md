@@ -5,7 +5,9 @@
 
 ## Contact information
 **Email:** togzhan.kurmanbek@gmail.com
+
 **Telegram:** @ParisianT
+
 **[Linkedin](https://www.linkedin.com/in/togzhan-k/)**
 
 
