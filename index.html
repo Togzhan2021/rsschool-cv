@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Togzhan Kurmanbek</h1>
+		<hr>
+		<h3>Junior Frontend Developer</h3>
+		<div class="contact">
+			<h2>Contact information</h2>
+			<hr>
+			<p><span class="bold">Email: </span>togzhan.kurmanbek@gmail.com</p>
+			<p><span class="bold">Telegram: </span>togzhan.kurmanbek@gmail.com</p>
+			<p><a href="https://www.linkedin.com/in/togzhan-k/" class="bold">Linkedin</a></p>
+		</div>
+		<div class="info-about-me">
+			<h2>Brief information about myself</h2>
+			<hr>
+			<p>My goal is to develop myself as a Frontend developer and grow in this field. Moreover, I'm working as a
+				teacher from a course Introduction to Web development.</p>
+			<p>Also, I strive to grow in IT, achieve good results in my field, share my knowledge with others, and plan
+				to have a positive impact on society.</p>
+		</div>
+		<div class="skills">
+			<h2>Skills</h2>
+			<hr>
+			<ul>
+				<li>HTML5, CSS3</li>
+				<li>basic JS</li>
+				<li>Php, Java, Sql</li>
+				<li>Git, GitHub</li>
+				<li>VSCode, Sublime Text</li>
+				<li>BEM methodology</li>
+				<li>Figma</li>
+			</ul>
+		</div>
+		<div class="code-example">
+			<h2>Code example</h2>
+			<hr>
+			<h3>Hide/Show the answer to a question when the question is clicked using JQUERY</h3>
+			<pre>
+				<code>
+					$(document).ready(function(){
+						$(".question").click(function(){
+					
+							$(this).css('font-weight', '400');
+					
+							$('.arrow').toggleClass('reverse');	
+					
+							$(".answer").slideUp();
+					
+							if($(this).next().is(":visible")){	
+								$(this).next().slideUp("fast");  
+								$(this).toggleClass('non-active');
+							}
+					
+							else{	
+								$(this).next().slideDown("fast");
+								$(this).toggleClass('active');
+							}
+						});
+					});
+				</code>
+			</pre>
+		</div>
+		<div class="work-experience">
+			<h2>Work Experience</h2>
+			<hr>
+			<ul>
+				<li><a href="https://github.com/Togzhan2021">Github account</a></li>
+				<li><a href="http://togzhan-portfolio.surge.sh/">My HTML/CSS projects</a></li>
+			</ul>
+		</div>
+		<div class="courses">
+			<h2>Courses</h2>
+			<hr>
+			<ul>
+				<li><a href="https://www.freecodecamp.org/certification/togzhan/responsive-web-design">Responsive Web
+						Design Certification from Freecodecamp.org</a></li>
+				<li>Front End Development Course from Ayat Innovation</li>
+				<li>JavaScript Algorithms and Data Structures from Freecodecamp.org (in progress)</li>
+				<li><a
+						href="https://www.coursera.org/programs/computer-engineering-and-information-security-mcsse-speciality-masters-jjlcd?currentTab=CATALOG&productId=bf56AUzfEeWRyA5YS9oHkQ&productType=s12n&showMiniModal=true">Web
+						Design for Everybody: Basics of Web Development & Coding in Coursera</a></li>
+				<li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+			</ul>
+		</div>
+		<div class="languages">
+			<h2>Languages</h2>
+			<hr>
+			<ul>
+				<li>Kazakh - native</li>
+				<li>Russian - fluent</li>
+				<li>English - intermediate</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
