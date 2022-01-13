@@ -4,6 +4,7 @@
 --- 
 
 ## Contact information
+
 **Email:** togzhan.kurmanbek@gmail.com
 
 **Telegram:** @ParisianT
@@ -53,7 +54,9 @@ Also, I strive to grow in IT, achieve good results in my field, share my knowled
 
 ## Work Experience
 - [Github account](https://github.com/Togzhan2021)
+
 - [HTML/CSS projects](http://togzhan-portfolio.surge.sh/)
+
 
 
 ## Courses
