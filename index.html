@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>My CV</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="myself">
+			<h1 class="my-name">Togzhan Kurmanbek</h1>
+			<h3 class="profession">Junior Frontend Developer</h3>
+		</div>
+		<div class="container-block contact">
+			<h2 class="container-block__header">Contact information</h2>
+			<p><span class="bold">Email: </span>togzhan.kurmanbek@gmail.com</p>
+			<p><span class="bold">Telegram: </span>@ParisianT</p>
+			<p><a href="https://www.linkedin.com/in/togzhan-k/" class="bold" target="_blank">Linkedin</a></p>
+		</div>
+		<div class="container-block info-about-me">
+			<h2 class="container-block__header">Brief information about myself</h2>
+			<p>My goal is to develop myself as a Frontend developer and grow in this field. Moreover, I'm working as a
+				teacher from a course Introduction to Web development.</p>
+			<p>Also, I strive to grow in IT, achieve good results in my field, share my knowledge with others, and plan
+				to have a positive impact on society.</p>
+		</div>
+		<div class="container-block skills">
+			<h2 class="container-block__header">Skills</h2>
+			<ul>
+				<li>HTML5, CSS3</li>
+				<li>basic JS</li>
+				<li>Php, Java, Sql</li>
+				<li>Git, GitHub</li>
+				<li>VSCode, Sublime Text</li>
+				<li>BEM methodology</li>
+				<li>Figma</li>
+			</ul>
+		</div>
+		<div class="container-block code-example">
+			<h2 class="container-block__header">Code example</h2>
+			<h3>Hide/Show the answer to a question when the question is clicked using JQUERY</h3>
+			<pre>
+				<code>
+					$(document).ready(function(){
+						$(".question").click(function(){
+					
+							$(this).css('font-weight', '400');
+					
+							$('.arrow').toggleClass('reverse');	
+					
+							$(".answer").slideUp();
+					
+							if($(this).next().is(":visible")){	
+								$(this).next().slideUp("fast");  
+								$(this).toggleClass('non-active');
+							}
+					
+							else{	
+								$(this).next().slideDown("fast");
+								$(this).toggleClass('active');
+							}
+						});
+					});
+				</code>
+			</pre>
+		</div>
+		<div class="container-block work-experience">
+			<h2 class="container-block__header">Work Experience</h2>
+			<ul>
+				<li><a href="https://github.com/Togzhan2021" target="_blank">Github account</a></li>
+				<li><a href="http://togzhan-portfolio.surge.sh/" target="_blank">My HTML/CSS projects</a></li>
+			</ul>
+		</div>
+		<div class="container-block courses">
+			<h2 class="container-block__header">Courses</h2>
+			<ul>
+				<li><a href="https://www.freecodecamp.org/certification/togzhan/responsive-web-design"
+						target="_blank">Responsive Web
+						Design Certification from Freecodecamp.org</a></li>
+				<li>Front End Development Course from Ayat Innovation</li>
+				<li>JavaScript Algorithms and Data Structures from Freecodecamp.org (in progress)</li>
+				<li><a href="https://www.coursera.org/programs/computer-engineering-and-information-security-mcsse-speciality-masters-jjlcd?currentTab=CATALOG&productId=bf56AUzfEeWRyA5YS9oHkQ&productType=s12n&showMiniModal=true"
+						target="_blank">Web
+						Design for Everybody: Basics of Web Development & Coding in Coursera</a></li>
+				<li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+			</ul>
+		</div>
+		<div class="container-block languages">
+			<h2 class="container-block__header">Languages</h2>
+			<ul>
+				<li>Kazakh - native</li>
+				<li>Russian - fluent</li>
+				<li>English - intermediate</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

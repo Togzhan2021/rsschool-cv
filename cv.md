@@ -4,13 +4,14 @@
 --- 
 
 ## Contact information
-**Email:** togzhan.kurmanbek@gmail.com 
+
+**Email:** togzhan.kurmanbek@gmail.com
 
 **Telegram:** @ParisianT
 
 **[Linkedin](https://www.linkedin.com/in/togzhan-k/)**
 
----
+
 ## Brief information about myself
 My goal is to develop myself as a Frontend developer and grow in this field. Moreover, I'm working as a teacher from a course _Introduction to Web development_. 
 
@@ -53,7 +54,9 @@ Also, I strive to grow in IT, achieve good results in my field, share my knowled
 
 ## Work Experience
 - [Github account](https://github.com/Togzhan2021)
-- [HTML/CSS projects](http://togzhan-portfolio.surge.sh/) 
+
+- [HTML/CSS projects](http://togzhan-portfolio.surge.sh/)
+
 
 
 ## Courses
